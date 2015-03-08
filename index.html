@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- ng-csp : [https://docs.angularjs.org/api/ng/directive/ngCsp] -->
+<html ng-app="myApp" ng-csp>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Play with History</title>
+	<script type="text/javascript" src="lib/d3.v3.min.js"></script>
+	<script type="text/javascript" src="lib/angular.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div class="col-md-12" ng-controller="myCtrl">
+
+		<div class="col-md-6">
+			<!-- the graph -->
+			<div class="col-md-12" ng-include="'views/graph.html'"></div>
+			
+			<!-- the table -->
+			<div class="col-md-12" ng-include="'views/history.html'"></div>
+		</div>
+
+		<div class="col-md-6">
+			<!-- the hostname -->
+			<div class="col-md-12" ng-include="'views/host.html'"></div>
+		</div>
+
+	</div>
+</body>
+</html>
