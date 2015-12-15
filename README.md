@@ -8,4 +8,4 @@ This is a chrome extension that utilizes the history-api and creates a cosolidat
 3. A horizontal bar graph displaying the number of times visit to any particular domain.
 
 
-*This application is build upon angularJS and D3js.*
+*This application is build with AngularJS and D3js.*
